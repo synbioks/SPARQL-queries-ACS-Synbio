@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sbh: <http://wiki.synbiohub.org/wiki/Terms/synbiohub#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX sbol: <http://sbols.org/v2#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX purl: <http://purl.obolibrary.org/obo/>
+PREFIX ns1: <http://purl.org/dc/elements/1.1/>
+
+SELECT
+	?paper
+	#?keyword
+
+WHERE {
+  
+    ?paper a sbol:Collection . #says that the paper must be a collection
+  	<https://synbioks.org/public/a932bf113a/a932bf113a_collection/1> sbol:member ?paper . #within the ACS Papers collection
+    # ?paper ns1:subject ?keyword #to see a list of keywords uncomment this line and line 14 and comment out line 13 and 21
+	  ?paper ns1:subject <keyword(string)>
+  }
