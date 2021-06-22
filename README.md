@@ -10,7 +10,7 @@
 
 ## Papers by Keyword
   An example of a query might be 'What are some papers about metabolic engineering?' or 'What are some papers about yeast?' or 'What are some papers about S. cerevisiae?'.
-  The [example file]() and the [template file](). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
+  The [example file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_by_keyword_example.sparql) and the [template file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_by_keyword_template.sparql). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
   
 ## Papers by Part Use
   
