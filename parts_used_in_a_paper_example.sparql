@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sbh: <http://wiki.synbiohub.org/wiki/Terms/synbiohub#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX sbol: <http://sbols.org/v2#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX purl: <http://purl.obolibrary.org/obo/>
+PREFIX ns1: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT
+    ?sequence
+
+WHERE {
+    ?paper a sbol:Collection . #says that the paper must be a collection
+  	<https://synbioks.org/public/a932bf113a/a932bf113a_collection/1> sbol:member ?paper . #within the ACS Papers collection
+    ?paper dcterms:title 'Genetic Engineering of Bee Gut Microbiome Bacteria with a Toolkit for Modular Assembly of Broad-Host-Range Plasmids' .
+    #?paper ns1:OBI_0002110 <https://doi.org/10.1021/acssynbio.7b00399> . #comment out line 18 instead to search by doi not title
+    ?paper sbol:member ?sequence . #the paper must have a sequence
+    ?sequence a sbol:ComponentDefinition
+  }
