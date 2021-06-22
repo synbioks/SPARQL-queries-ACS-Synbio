@@ -6,6 +6,7 @@
   
 ## SPARQL Basics
   Any line starting with ```#``` in SPARQL is a comment meaning it will not do anything but describes the code or can be removed to add an additional feature.
+  Any urls must be surrounded by ```<``` and ```>``` e.g. ```<https://synbioks.org/public/MoClo_Yeast_Toolkit_Dueber_Lab/KanR/1>```
   For more information on SPARQL see the SPARQL 1.1 [W3 Overview](https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/). 
 
 ## Papers by Keyword
@@ -13,19 +14,26 @@
    - What are some papers about metabolic engineering?
    - What are some papers about yeast?
    - What are some papers about S. cerevisiae?
+  
   The [example file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_by_keyword_example.sparql) and the [template file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_by_keyword_template.sparql). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
   
 ## Papers by Part Use
-  The [example file]() and the [template file](). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
+  Example query:
+   - Which papers use the KanR kanamycin resistance sequence?
   
-## Papers by Author
+  The [example file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_by_part_use_example.sparql) and the [template file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/tree/main). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
   
 ## Papers with Multiple Filters
+   Example query:
+   - Which papers have keyword yeast or S. cerevisiae?
+   - Which papers about metabollic engineering use S. cerevisiae?
+   - Which papers using KanR kanamycin resistance also use S. cerevisiae?
+  
+  The [example file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_with_multiple_filters_example.sparql) and the [template file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/papers_with_multiple_filters_template.sparql). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
   
 ## Parts used in a Paper
+   Example query:
+   - What are all the parts used in 'Genetic Engineering of Bee Gut Microbiome Bacteria with a Toolkit for Modular Assembly of Broad-Host-Range Plasmids'?
+   - What are all the parts used in https://pubs.acs.org/doi/10.1021/acssynbio.7b00399?
   
-<!--- ## Parts by Organism --->
-  
-
-
-  # What are some papers about metabolic engineering inE. coli?  What are some papersabout metabolic engineering inPseudomonas putida?•I’ve found an interesting paper about a fluoride biosensor.  What parts were used toconstruct the strains in this paper?•Which papers use the pLac promoter sequence?•What are some inducible promoters forE. coli?  What are some strong constitutivepromoters forS. cerevisiae?
+  The [example file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/parts_used_in_a_paper_example.sparql) and the [template file](https://github.com/synbioks/SPARQL-queries-ACS-Synbio/blob/main/parts_used_in_a_paper_template.sparql). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
