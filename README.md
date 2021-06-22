@@ -8,10 +8,9 @@
   Any line starting with ```#``` in SPARQL is a comment meaning it will not do anything but describes the code or can be removed to add an additional feature.
   For more information on SPARQL see the SPARQL 1.1 [W3 Overview](https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/). 
 
-## Papers by Subject
-  An example of a query might be 'What are some papers about metabolic engineering?'.
-  
-## Papers by Organism or Subject
+## Papers by Keyword
+  An example of a query might be 'What are some papers about metabolic engineering?' or 'What are some papers about yeast?' or 'What are some papers about S. cerevisiae?'.
+  The [example file]() and the [template file](). Remember to copy the PREFIX section too and to remove the prefilled PREFIX lines in the synbioks sparql interface.
   
 ## Papers by Part Use
   
