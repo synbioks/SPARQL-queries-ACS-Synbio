@@ -10,7 +10,7 @@ PREFIX purl: <http://purl.obolibrary.org/obo/>
 
 SELECT DISTINCT
 	?paper
-  ?sequence #comment out to just get a list of papers
+	?sequence #comment out to just get a list of papers
 
 WHERE {
     ?paper a sbol:Collection . #says that the paper must be a collection
