@@ -11,7 +11,7 @@ PREFIX ns1: <http://purl.org/dc/elements/1.1/>
 
 SELECT DISTINCT
 	?paper
-  ?sequence
+  	?sequence
 	?keyword
 
 WHERE {
